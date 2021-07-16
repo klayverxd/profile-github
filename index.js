@@ -5,8 +5,8 @@ const followers = document.getElementById('followers')
 const following = document.getElementById('following')
 const avatar_url = document.getElementById('avatar')
 
-function getUserData() {
-	fetch('https://api.github.com/users/klayverxd')
+function getUserData(login = 'klayverxd') {
+	fetch('https://api.github.com/users/' + login)
 		.then(response => response.json())
 		.then(data => {
 			avatar_url.src = data.avatar_url
@@ -17,6 +17,16 @@ function getUserData() {
 			following.innerHTML = data.following
 		})
 		.catch(error => console.error(error))
+}
+
+function changeUser() {
+	login = prompt('Please enter your @ on GitHub:')
+
+	if (login == null || login == '') {
+		text = 'User cancelled the prompt.'
+	} else {
+		getUserData(login)
+	}
 }
 
 getUserData()
