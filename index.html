@@ -1,9 +1,60 @@
-Seu nome
-@seunome
-Editar
-Projetos
-27
-Estrelas
-302
-Seguidores
-83
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+		<link rel="stylesheet" type="text/css" href="index.css" />
+
+		<title>Profile-Github</title>
+	</head>
+	<body>
+		<main>
+			<header>
+				<div class="user-info">
+					<img src="https://github.com/klayverxd.png" alt="User image" />
+
+					<div>
+						<p class="user-name" id="name"></p>
+						<span class="at-sign" id="login"></span>
+					</div>
+				</div>
+				<button><i class="fa fa-edit icon-button"></i> Editar</button>
+			</header>
+			<section class="cards">
+				<div class="card card1">
+					<p class="title-card">
+						Projetos
+						<br />
+						<span class="number-card" id="public_repos"></span>
+					</p>
+				</div>
+				<div class="card card2">
+					<p class="title-card">
+						Seguindo
+						<br />
+						<span class="number-card" id="following"></span>
+					</p>
+				</div>
+				<div class="card card3">
+					<p class="title-card">
+						Seguidores
+						<br />
+						<span class="number-card" id="followers"></span>
+					</p>
+				</div>
+			</section>
+		</main>
+
+		<script src="index.js"></script>
+	</body>
+</html>

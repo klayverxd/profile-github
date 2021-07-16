@@ -1,0 +1,144 @@
+html {
+	box-sizing: border-box;
+	font-size: 16px;
+	font-family: 'Rubik', 'Roboto', sans-serif;
+
+	color: #b7b7b7;
+	background-color: #0c0b0b;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+main {
+	width: 50%;
+	max-width: 58%;
+	background-color: #242323;
+
+	margin: auto auto;
+	padding: 3rem 4rem;
+
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+
+	align-items: center;
+}
+
+.user-info {
+	display: flex;
+	align-items: center;
+}
+
+.user-name {
+	font-size: 1.4rem;
+	font-weight: 600;
+	line-height: 1.3rem;
+}
+
+.at-sign {
+	font-size: 1rem;
+}
+
+img {
+	width: 6rem;
+	max-width: 100%;
+	height: auto;
+
+	margin-right: 1rem;
+
+	border-radius: 50%;
+}
+
+button {
+	height: 2rem;
+	width: auto;
+
+	font-weight: 600;
+
+	display: flex;
+	align-items: center;
+
+	color: #b7b7b7;
+	background-color: #505050;
+
+	border: 0;
+	border-radius: 5px;
+
+	font-size: 0.9rem;
+
+	cursor: pointer;
+}
+
+.icon-button {
+	font-size: 1.5rem;
+	margin-right: 0.4rem;
+}
+
+section.cards {
+	width: 100%;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.card {
+	width: 30%;
+	padding: 0.8rem 1rem;
+	border-radius: 5px;
+}
+
+.card1 {
+	background-color: #046313;
+}
+.card2 {
+	background-color: #044a7d;
+}
+.card3 {
+	background-color: #725200;
+}
+
+.title-card {
+	font-size: 1rem;
+}
+.number-card {
+	font-size: 2.4rem;
+}
